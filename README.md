@@ -26,10 +26,10 @@ This project is set up to deploy your existing `app.py` bot to Render easily, wi
 5.  Click **"Create Web Service"**.
 
 ### 🎉 Done!
-Your bot will be live. Render will give you a URL (e.g., `https://sbs-bot.onrender.com`).
-- **Dashboard**: `https://YOUR-APP-URL.onrender.com`
-- **Stats**: `https://YOUR-APP-URL.onrender.com/stats`
-- **Health**: `https://YOUR-APP-URL.onrender.com/health`
+Your bot will be live. Render will give you a URL (e.g., `https://boom-bot-tele.onrender.com`).
+- **Dashboard**: `https://boom-bot-tele.onrender.com`
+- **Stats**: `https://boom-bot-tele.onrender.com/stats`
+- **Health**: `https://boom-bot-tele.onrender.com/health`
 
 ### ⚠️ Important Note on Database
 Render's filesystem is ephemeral (temporary). If the bot restarts, the `sbs_pro_database.json` file will reset to its initial state.
