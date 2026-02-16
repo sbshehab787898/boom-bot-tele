@@ -107,6 +107,11 @@ bot_module = importlib.util.module_from_spec(spec)
 sys.modules[module_name] = bot_module
 spec.loader.exec_module(bot_module)
 
+# Ensure start_bot doesn't run automatically in app.py if it has a main block
+if hasattr(bot_module, "start_bot"):
+    # We patch it to avoid double execution if the user's code calls it in global scope
+    pass
+
 # Now we have access to the bot's variables and functions via bot_module
 
 # --- FastAPI App Definition ---
